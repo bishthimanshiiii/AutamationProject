@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestScripts.ValidLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestScripts.ValidLoginTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="TestScripts.ValidLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestScripts.ValidLoginTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestScripts.ValidLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestScripts.ValidLoginTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
